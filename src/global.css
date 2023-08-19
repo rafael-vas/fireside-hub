@@ -1,0 +1,41 @@
+@import url("https://fonts.cdnfonts.com/css/iqos");
+
+:root {
+  --white: #fff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #9a93ac;
+  --gray-600: #342c45;
+  --gray-700: #292238;
+  --gray-800: #211b30;
+  --gray-900: #12111e;
+
+  --red-300: #ee1e58;
+  --red-500: #bd1c4a;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 1.5px var(--red-500);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "IQOS", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+}
+
+body {
+  background-color: var(--gray-900);
+  -webkit-font-smoothing: antialiased;
+  color: var(--gray-300);
+}
+
+body #root {
+  min-height: 100vh;
+}
