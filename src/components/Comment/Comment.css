@@ -1,0 +1,105 @@
+.comment-list .comment {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+
+  animation: showComment 0.5s normal;
+}
+
+@keyframes showComment {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(10px) rotate(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0) rotate(0);
+  }
+}
+
+.comment-list .comment .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+.comment-list .comment .box {
+  flex: 1;
+}
+
+.comment-list .comment .box .content {
+  background: var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.comment-list .comment .box .content .header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.comment-list .comment .box .content .header .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-list .comment .box .content .header .info .name {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.comment-list .comment .box .content .header .info .time {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.comment-list .comment .box .content .header .delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  border-radius: 2px;
+  line-height: 0;
+}
+
+.comment-list .comment .box .content .header .delete-btn:hover {
+  color: var(--red-300);
+}
+
+.comment-list .comment .box .content .message {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.comment-list .comment .box .footer {
+  margin-top: 1rem;
+}
+
+.comment-list .comment .box .footer .like-btn {
+  background: transparent;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.comment-list .comment .box .footer .like-btn:hover {
+  color: var(--red-300);
+}
+
+.comment-list .comment .box .footer .like-btn .icon {
+  margin-right: 0.5rem;
+}
+
+.comment-list .comment .box .footer .like-btn .count::before {
+  content: "\2022";
+  padding: 0 0.25rem;
+}
