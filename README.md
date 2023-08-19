@@ -8,12 +8,10 @@ Bem-vindo ao Fireside, uma plataforma para desenvolvedores compartilharem seus p
 
 O Fireside é um espaço virtual dedicado à comunidade de desenvolvedores. Aqui, você pode compartilhar suas últimas conquistas, aprender com as experiências de outros desenvolvedores e se envolver em conversas estimulantes. Seja para discutir tópicos relacionados ao desenvolvimento, compartilhar artigos interessantes ou receber feedback sobre projetos pessoais, o Fireside é o lugar perfeito para se conectar com outros membros da comunidade.
 
-## Como Começar
-
-1. Clone o repositório: `git clone https://github.com/rafael-vas/fireside-hub.git`
-2. Navegue até o diretório do projeto: `cd fireside-hub`
-3. Instale as dependências: `npm install`
-4. Inicie o servidor de desenvolvimento: `npm run dev`
+## Acesse o Projeto
+```
+https://fireside-hub.netlify.app/
+```
 
 ## Recursos
 
