@@ -1,0 +1,149 @@
+.post {
+  background: var(--gray-800);
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+
+.post + .post {
+  margin-top: 2rem;
+}
+
+.post .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .header .time {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+.post .header .author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post .header .author .avatar {
+  width: calc(3rem + 12px);
+  height: calc(3rem + 12px);
+  border-radius: 8px;
+  border: 4px solid var(--gray-800);
+  outline: 2px solid var(--red-500);
+}
+
+.post .header .author .author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post .header .author .author-info .name {
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.post .header .author .author-info .role {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
+.post > .content {
+  line-height: 1.6;
+  color: var(--gray-300);
+  margin-top: 1.5rem;
+}
+
+.post > .content .text {
+  margin-top: 1rem;
+}
+
+.post > .content .hashtags {
+  display: flex;
+  gap: 7px;
+}
+
+.post > .content .link {
+  font-weight: bold;
+  color: var(--red-500);
+}
+
+.post > .content .link:hover {
+  color: var(--red-300);
+}
+
+.post .form {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-600);
+}
+
+.post .form .label {
+  line-height: 1.6;
+  color: var(--gray-100);
+}
+
+.post .form .comment {
+  width: 100%;
+  background: var(--gray-900);
+  border: none;
+  resize: none;
+  height: 6rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-100);
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+.post .form .footer .btn,
+.post .form .footer .btn:disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.post .form:focus-within .footer .btn:not(:disabled) {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.post .form:focus-within .footer .btn:not(:disabled) {
+  animation: showBtn 0.4s normal;
+}
+
+@keyframes showBtn {
+  0% {
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: translate(-1px, 1px) rotate(-1deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0) rotate(0);
+  }
+}
+
+.post .form .btn {
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--red-500);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.post .form .btn:hover {
+  background: var(--red-300);
+}
+
+.post .comment-list {
+  margin-top: 2rem;
+}
