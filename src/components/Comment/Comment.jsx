@@ -46,7 +46,7 @@ const Comment = ({ content, onDeleteComment }) => {
                 <footer className="footer">
                     <button className="like-btn" onClick={handleAddLike}>
                         <ThumbsUp className="icon" />
-                        Aplaudir <span className="count">{likeCount}</span>
+                        Curtir <span className="count">{likeCount}</span>
                     </button>
                 </footer>
             </div>

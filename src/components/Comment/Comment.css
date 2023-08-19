@@ -89,6 +89,7 @@
   display: flex;
   align-items: center;
   border-radius: 2px;
+  gap: .45rem;
 }
 
 .comment-list .comment .box .footer .like-btn:hover {
@@ -101,5 +102,5 @@
 
 .comment-list .comment .box .footer .like-btn .count::before {
   content: "\2022";
-  padding: 0 0.25rem;
+  padding-right: .45rem;
 }
