@@ -1,0 +1,24 @@
+#root > .header {
+  background-color: var(--gray-800);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root > .header .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#root > .header .logo-icon {
+  width: 42px;
+}
+
+#root > .header .logo-text {
+  font-size: 1.5rem;
+  color: var(--gray-300);
+  font-family: inherit;
+  letter-spacing: 0.02rem;
+}
